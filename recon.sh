@@ -87,7 +87,7 @@ if is_ip_address "$TARGET"; then
     echo "Target IP Address: $TARGET_IP"
     VT_SCAN=$(source ./vt-scan/vt-scan.sh -k $API_VIRUSTOTAL -i $TARGET_IP)
     echo "$VT_SCAN" > $dir_name/vt-scan.json
-    echo "Using VirusTotal:"
+    echo -e "\nUsing VirusTotal:"
     echo "New file created at: ./$dir_name/vt-scan.json"
 else
     # If it's not an IP, use ping to resolve the domain to an IP address
@@ -146,4 +146,18 @@ echo "https://search.odin.io/hosts?query=$TARGET"
 echo "https://www.infobyip.com/ip-$TARGET.html"
 echo "Further ip/domain forensics: https://hackertarget.com/"
 echo "OSINT Tools: https://osintframework.com/"
-echo -e "=================================================="
+echo -e "==================================================\n\n"
+
+echo "Suggested nmap scan: threader3000 $TARGET_IP"
+read -p "Executing this command will clear this screen and terminate this script. Do you want to procced? (y/n): " answer
+
+if [ "$answer" == "n" ] || [ "$answer" == "N" ] || [ "$answer" == "NO" ] || [ "$answer" == "no" ]; then
+    echo "Exiting program."
+    exit 0
+fi
+
+threader3000 $TARGET_IP 
+
+threader3000 <<EOF > ./$dir_name/portscan.txt
+$TARGET_IP
+EOF
