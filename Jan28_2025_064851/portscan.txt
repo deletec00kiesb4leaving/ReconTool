@@ -1,0 +1,19 @@
+[H[2J[3J------------------------------------------------------------
+        Threader 3000 - Multi-threaded Port Scanner          
+                       Version 1.0.7                    
+                   A project by The Mayor               
+------------------------------------------------------------
+Enter your target IP address or URL here: ------------------------------------------------------------
+Scanning target 104.21.60.199
+Time started: 2025-01-28 06:50:27.925655
+------------------------------------------------------------
+Port 80 is open
+Port 443 is open
+Port 2052 is open
+Port 2053 is open
+Port 2082 is open
+Port 2086 is open
+Port 2083 is open
+Port 2087 is open
+Port 2096 is open
+Port 2095 is open

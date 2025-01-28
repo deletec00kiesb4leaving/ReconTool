@@ -1,0 +1,168 @@
+{
+  "source": "ip-address",
+  "limits": {
+    "public": {
+      "day": {
+        "limit": 2500,
+        "used": 0,
+        "remaining": 2500,
+        "percent": 0
+      },
+      "hour": {
+        "limit": 250,
+        "used": 0,
+        "remaining": 250,
+        "percent": 0
+      },
+      "minute": {
+        "limit": 30,
+        "used": 0,
+        "remaining": 30,
+        "percent": 0
+      }
+    },
+    "unlisted": {
+      "day": {
+        "limit": 500,
+        "used": 0,
+        "remaining": 500,
+        "percent": 0
+      },
+      "hour": {
+        "limit": 50,
+        "used": 0,
+        "remaining": 50,
+        "percent": 0
+      },
+      "minute": {
+        "limit": 30,
+        "used": 0,
+        "remaining": 30,
+        "percent": 0
+      }
+    },
+    "private": {
+      "day": {
+        "limit": 25,
+        "used": 0,
+        "remaining": 25,
+        "percent": 0
+      },
+      "hour": {
+        "limit": 25,
+        "used": 0,
+        "remaining": 25,
+        "percent": 0
+      },
+      "minute": {
+        "limit": 5,
+        "used": 0,
+        "remaining": 5,
+        "percent": 0
+      }
+    },
+    "search": {
+      "day": {
+        "limit": 500,
+        "used": 0,
+        "remaining": 500,
+        "percent": 0
+      },
+      "hour": {
+        "limit": 100,
+        "used": 0,
+        "remaining": 100,
+        "percent": 0
+      },
+      "minute": {
+        "limit": 30,
+        "used": 0,
+        "remaining": 30,
+        "percent": 0
+      }
+    },
+    "retrieve": {
+      "day": {
+        "limit": 500,
+        "used": 2,
+        "remaining": 498,
+        "reset": "2025-01-29T00:00:00.000Z",
+        "percent": 0
+      },
+      "hour": {
+        "limit": 250,
+        "used": 0,
+        "remaining": 250,
+        "percent": 0
+      },
+      "minute": {
+        "limit": 20,
+        "used": 0,
+        "remaining": 20,
+        "percent": 0
+      }
+    },
+    "livescan": {
+      "day": {
+        "limit": 0,
+        "used": 0,
+        "remaining": 0,
+        "percent": 100
+      },
+      "hour": {
+        "limit": 0,
+        "used": 0,
+        "remaining": 0,
+        "percent": 100
+      },
+      "minute": {
+        "limit": 0,
+        "used": 0,
+        "remaining": 0,
+        "percent": 100
+      }
+    },
+    "liveshot": {
+      "day": 1000,
+      "hour": 100,
+      "minute": 10
+    },
+    "userforgot": {
+      "day": 10,
+      "hour": 10,
+      "minute": 10
+    },
+    "userlogin": {
+      "day": 50,
+      "hour": 50,
+      "minute": 50
+    },
+    "maxSearchRangeMonths": 3,
+    "maxSearchResults": 100,
+    "queryableFields": [
+      "asn",
+      "asnname.*",
+      "country",
+      "date",
+      "domain.*",
+      "filename.*",
+      "files.*",
+      "hash",
+      "indexedAt",
+      "ip",
+      "page.*",
+      "server",
+      "stats.*",
+      "task.*",
+      "team",
+      "updatedAt",
+      "user"
+    ],
+    "queryVisibility": [
+      "public"
+    ],
+    "maxRetentionPeriodDays": 7,
+    "products": [],
+    "features": []
+  }
+}

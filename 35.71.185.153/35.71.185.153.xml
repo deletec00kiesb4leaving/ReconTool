@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Tue Jan 28 06:56:05 2025 as: nmap -p80,443 -sV -sC -T4 -Pn -oA 35.71.185.153 35.71.185.153 -->
+<nmaprun scanner="nmap" args="nmap -p80,443 -sV -sC -T4 -Pn -oA 35.71.185.153 35.71.185.153" start="1738047365" startstr="Tue Jan 28 06:56:05 2025" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="2" services="80,443"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1738047365" endtime="1738047379"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="35.71.185.153" addrtype="ipv4"/>
+<hostnames>
+<hostname name="zara.pt" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http-proxy" product="Varnish http accelerator" method="probed" conf="10"><cpe>cpe:/a:varnish-cache:varnish</cpe></service><script id="http-open-proxy" output="Proxy might be redirecting requests"/><script id="http-server-header" output="Varnish"><elem>Varnish</elem>
+</script><script id="http-title" output="Did not follow redirect to https://zara.pt/"><elem key="redirect_url">https://zara.pt/</elem>
+</script><script id="https-redirect" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http-proxy" product="Varnish http accelerator" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:varnish-cache:varnish</cpe></service><script id="http-server-header" output="Varnish"><elem>Varnish</elem>
+</script><script id="http-title" output="Did not follow redirect to https://www.zara.com/pt/"><elem key="redirect_url">https://www.zara.com/pt/</elem>
+</script><script id="ssl-cert" output="Subject: commonName=affinitycard.co&#xa;Subject Alternative Name: DNS:affinitycard.co&#xa;Not valid before: 2024-12-12T17:42:36&#xa;Not valid after:  2025-03-12T17:42:35"><table key="subject">
+<elem key="commonName">affinitycard.co</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">E5</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+</table>
+<table key="pubkey">
+<table key="ecdhparams">
+<table key="curve_params">
+<elem key="curve">prime256v1</elem>
+<elem key="ec_curve_type">namedcurve</elem>
+</table>
+</table>
+<elem key="type">ec</elem>
+<elem key="bits">256</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="critical">true</elem>
+<elem key="value">Digital Signature</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">2F:AA:82:FD:5F:5B:BD:FD:75:E2:6F:94:9A:02:03:67:FD:B1:8F:B0</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">9F:2B:5F:CF:3C:21:4F:9D:04:B7:ED:2B:2C:C4:C6:70:8B:D2:D7:0D</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">OCSP - URI:http://e5.o.lencr.org&#xa;CA Issuers - URI:http://e5.i.lencr.org/</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">DNS:affinitycard.co</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : E6:D2:31:63:40:77:8C:C1:10:41:06:D7:71:B9:CE:C1:&#xa;                D2:40:F6:96:84:86:FB:BA:87:32:1D:FD:1E:37:8E:50&#xa;    Timestamp : Dec 12 18:41:06.982 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:B1:BF:6A:D1:83:30:9B:3A:6F:ED:F4:&#xa;                B0:2C:07:69:5F:66:39:C3:82:2F:D2:67:14:95:89:A3:&#xa;                3C:26:61:72:BB:02:21:00:B5:3D:A0:25:78:CA:20:1B:&#xa;                C5:04:4B:FA:EF:7E:AA:09:3A:62:A9:E9:A5:2D:DB:CA:&#xa;                0C:86:46:F5:25:BD:BE:B8&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 13:4A:DF:1A:B5:98:42:09:78:0C:6F:EF:4C:7A:91:A4:&#xa;                16:B7:23:49:CE:58:57:6A:DF:AE:DA:A7:C2:AB:E0:22&#xa;    Timestamp : Dec 12 18:41:07.175 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:42:31:9B:48:CA:1D:98:27:CF:56:CE:1D:&#xa;                E1:59:CA:39:27:6E:EF:3D:53:80:7A:BE:CF:8B:CB:3B:&#xa;                8A:9A:6F:D0:02:21:00:84:16:55:78:3F:6D:22:06:BF:&#xa;                A9:FA:3F:5F:4F:24:9F:E2:F4:5E:45:B8:65:ED:F4:0B:&#xa;                B6:03:A5:14:51:30:DE</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+</table>
+<elem key="sig_algo">ecdsa-with-SHA384</elem>
+<table key="validity">
+<elem key="notBefore">2024-12-12T17:42:36</elem>
+<elem key="notAfter">2025-03-12T17:42:35</elem>
+</table>
+<elem key="md5">99a41ff44be706354ea5db33ca9ee0ff</elem>
+<elem key="sha1">0b8da29d92ac08e70160e9916f6f616aeba73cfb</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDfzCCAwagAwIBAgISBFd8Zf6LDfEDw5pHTMWzopmzMAoGCCqGSM49BAMDMDIx&#xa;CzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJF&#xa;NTAeFw0yNDEyMTIxNzQyMzZaFw0yNTAzMTIxNzQyMzVaMBoxGDAWBgNVBAMTD2Fm&#xa;ZmluaXR5Y2FyZC5jbzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABHLZgnqEYnhz&#xa;TPKzt0aqd4jsPyzIY0eY9nQ7jI9vIe+5w/r6U0UM6sUxug/PyWSE7wivOeoU+6OO&#xa;aVFN6H39fwajggISMIICDjAOBgNVHQ8BAf8EBAMCB4AwHQYDVR0lBBYwFAYIKwYB&#xa;BQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFC+qgv1fW739&#xa;deJvlJoCA2f9sY+wMB8GA1UdIwQYMBaAFJ8rX888IU+dBLftKyzExnCL0tcNMFUG&#xa;CCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0cDovL2U1Lm8ubGVuY3Iub3Jn&#xa;MCIGCCsGAQUFBzAChhZodHRwOi8vZTUuaS5sZW5jci5vcmcvMBoGA1UdEQQTMBGC&#xa;D2FmZmluaXR5Y2FyZC5jbzATBgNVHSAEDDAKMAgGBmeBDAECATCCAQUGCisGAQQB&#xa;1nkCBAIEgfYEgfMA8QB3AObSMWNAd4zBEEEG13G5zsHSQPaWhIb7uocyHf0eN45Q&#xa;AAABk7wstaYAAAQDAEgwRgIhALG/atGDMJs6b+30sCwHaV9mOcOCL9JnFJWJozwm&#xa;YXK7AiEAtT2gJXjKIBvFBEv6736qCTpiqemlLdvKDIZG9SW9vrgAdgATSt8atZhC&#xa;CXgMb+9MepGkFrcjSc5YV2rfrtqnwqvgIgAAAZO8LLZnAAAEAwBHMEUCIEIxm0jK&#xa;HZgnz1bOHeFZyjknbu89U4B6vs+LyzuKmm/QAiEAhBZVeD9tIga/qfo/X08kn+L0&#xa;XkW4Ze30C7YDpRRRMN4wCgYIKoZIzj0EAwMDZwAwZAIwQRM73cD/aM5Nef+5BH5K&#xa;HoHDVMlqRmTqDdii4wjTCa4/6A7q+HsfupRsGhhTQm9FAjBJR5HiKjtVLlQVUcXm&#xa;JkaVpjOKN9M5aYCxXHkf0sZ3Joq7KnzP9IMm0AvcfJHOOi4=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="9586" rttvar="7212" to="100000"/>
+</host>
+<runstats><finished time="1738047379" timestr="Tue Jan 28 06:56:19 2025" elapsed="14.80" summary="Nmap done at Tue Jan 28 06:56:19 2025; 1 IP address (1 host up) scanned in 14.80 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

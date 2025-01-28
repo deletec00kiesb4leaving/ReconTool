@@ -158,6 +158,4 @@ fi
 
 threader3000 $TARGET_IP 
 
-threader3000 <<EOF > ./$dir_name/portscan.txt
-$TARGET_IP
-EOF
+exit 0

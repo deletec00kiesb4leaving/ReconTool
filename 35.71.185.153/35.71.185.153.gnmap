@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Tue Jan 28 06:56:05 2025 as: nmap -p80,443 -sV -sC -T4 -Pn -oA 35.71.185.153 35.71.185.153
+Host: 35.71.185.153 (zara.pt)	Status: Up
+Host: 35.71.185.153 (zara.pt)	Ports: 80/open/tcp//http-proxy//Varnish http accelerator/, 443/open/tcp//ssl|http-proxy//Varnish http accelerator/
+# Nmap done at Tue Jan 28 06:56:19 2025 -- 1 IP address (1 host up) scanned in 14.80 seconds
